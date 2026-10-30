@@ -41,8 +41,5 @@ def match_sidecars(files: list[Path]) -> dict[Path,Path]:
     return media_and_json
 
 
-    
 
-files_list = scan_directory(directory)
-print(match_sidecars(files_list))
 
