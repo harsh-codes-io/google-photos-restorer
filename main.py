@@ -2,13 +2,22 @@ from json import JSONDecodeError
 from pathlib import Path
 
 import metadata_reader as mr
+import scanner
 
 # Give path of current python file(main.py in this case) and creating Path object
 script_path = Path(__file__)
 # using .resolve() to obtain an absolute path of the directory in which script is located
 project_dir = script_path.resolve().parent
 json_file_path = project_dir / "sample.json"
-print("Parsing JSON file:")
+#print("Parsing JSON file:")
+
+directory = project_dir / "sample_data"
+
+# Step 1: Discover media files and JSON sidecars
+files = scanner.scan_directory(directory)
+
+# Step 2: Match media files with their sidecars
+matched_files = scanner.match_sidecars(files)
 
 try:
     parsed_json = mr.read_json(json_file_path)
