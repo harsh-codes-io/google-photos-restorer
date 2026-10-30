@@ -1,0 +1,289 @@
+{
+  "name": "pic.jpeg",
+  "ext": "jpeg",
+  "mimeType": "image/jpeg",
+  "detectedMime": "image/jpeg",
+  "size": 60942,
+  "source": "file",
+  "url": "",
+  "signature": {
+    "ext": "jpg",
+    "mime": "image/jpeg",
+    "label": "JPEG (ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 01)"
+  },
+  "headHex": "ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 01",
+  "headHexLong": "ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 01 00 01 00 00 ff db 00 84 00 06 06 06 06 07 06 07 08 08 07 0a 0b 0a 0b 0a 0f 0e 0c 0c 0e 0f 16 10 11 10 11 10 16 22 15 19 15 15 19 15 22 1e 24 1e",
+  "headText": "......JFIF......................... . . .............\"......\".$.",
+  "headTextLong": "......JFIF.........................\n.\n.\n.............\"......\".$.",
+  "hashes": {
+    "md5": "0ad2e610c19538fa7eda668c295b4ae9",
+    "sha1": "d42318d5d0ae07120fb9bf2ee6715e44d37519db",
+    "sha256": "bd93c2d1b80ca88a381243d8cfbee95e7d08a60bd65b0e940fa33eebdffb46e7",
+    "sha512": "be9651e8d915c7e58a60345caeceeedfaeb2c5fc9919d8d89869338643d252a77c78b2d9abb31cccb70416143e36fdcdb16b89136e5987618140ecda62427935",
+    "crc32": "6d84b7da",
+    "adler32": "aed1efd2"
+  },
+  "relatedExts": [],
+  "viewer": {
+    "slug": "",
+    "via": "standalone",
+    "detectedMime": "image/jpeg"
+  },
+  "arrayBuffer": {},
+  "parserReports": [
+    {
+      "id": "exifr",
+      "label": "exifr",
+      "status": "success",
+      "note": "Broad parser for TIFF/EXIF, XMP, ICC, IPTC, JFIF, and IHDR.",
+      "detail": "Parsed structured metadata."
+    },
+    {
+      "id": "piexifjs",
+      "label": "piexifjs",
+      "status": "success",
+      "note": "JPEG-focused EXIF parser and fallback.",
+      "detail": "Parsed raw JPEG IFD groups."
+    },
+    {
+      "id": "pdf-metadata",
+      "label": "pdf metadata",
+      "status": "skipped",
+      "note": "PDF-specific metadata parser.",
+      "detail": "Skipped because the file is not PDF."
+    },
+    {
+      "id": "kamadak-exif",
+      "label": "kamadak-exif (WASM)",
+      "status": "skipped",
+      "note": "No browser-ready build is bundled in this repo. Adapter hook is available via window.EXIF_WASM_ADAPTERS.",
+      "detail": ""
+    },
+    {
+      "id": "rexif",
+      "label": "rexif (WASM)",
+      "status": "skipped",
+      "note": "No browser-ready build is bundled in this repo. Adapter hook is available via window.EXIF_WASM_ADAPTERS.",
+      "detail": ""
+    }
+  ],
+  "metadata": [
+    {
+      "section": "jfif",
+      "label": "JFIFVersion",
+      "keyPath": "JFIFVersion",
+      "values": [
+        "257"
+      ]
+    },
+    {
+      "section": "jfif",
+      "label": "Resolution Unit",
+      "keyPath": "ResolutionUnit",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "section": "jfif",
+      "label": "Thumbnail Height",
+      "keyPath": "ThumbnailHeight",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "section": "jfif",
+      "label": "Thumbnail Width",
+      "keyPath": "ThumbnailWidth",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "section": "jfif",
+      "label": "XResolution",
+      "keyPath": "XResolution",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "section": "jfif",
+      "label": "YResolution",
+      "keyPath": "YResolution",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "ExifTool:ExifToolVersion",
+      "keyPath": "ExifTool.ExifTool:ExifToolVersion",
+      "values": [
+        "13.59"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:FileType",
+      "keyPath": "ExifTool.File:FileType",
+      "values": [
+        "JPEG"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:FileTypeExtension",
+      "keyPath": "ExifTool.File:FileTypeExtension",
+      "values": [
+        "JPG"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:MIMEType",
+      "keyPath": "ExifTool.File:MIMEType",
+      "values": [
+        "image/jpeg"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:ImageWidth",
+      "keyPath": "ExifTool.File:ImageWidth",
+      "values": [
+        "902"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:ImageHeight",
+      "keyPath": "ExifTool.File:ImageHeight",
+      "values": [
+        "1600"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:EncodingProcess",
+      "keyPath": "ExifTool.File:EncodingProcess",
+      "values": [
+        "2"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:BitsPerSample",
+      "keyPath": "ExifTool.File:BitsPerSample",
+      "values": [
+        "8"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:ColorComponents",
+      "keyPath": "ExifTool.File:ColorComponents",
+      "values": [
+        "3"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:YCbCrSubSampling",
+      "keyPath": "ExifTool.File:YCbCrSubSampling",
+      "values": [
+        "2 2"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "JFIF:JFIFVersion",
+      "keyPath": "ExifTool.JFIF:JFIFVersion",
+      "values": [
+        "1 1"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "JFIF:ResolutionUnit",
+      "keyPath": "ExifTool.JFIF:ResolutionUnit",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "JFIF:XResolution",
+      "keyPath": "ExifTool.JFIF:XResolution",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "JFIF:YResolution",
+      "keyPath": "ExifTool.JFIF:YResolution",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "Composite:ImageSize",
+      "keyPath": "ExifTool.Composite:ImageSize",
+      "values": [
+        "902 1600"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "Composite:Megapixels",
+      "keyPath": "ExifTool.Composite:Megapixels",
+      "values": [
+        "1.4432"
+      ]
+    }
+  ],
+  "responseHeaders": null,
+  "parserResults": {
+    "exifr": {
+      "jfif": {
+        "JFIFVersion": 257,
+        "ResolutionUnit": 0,
+        "XResolution": 1,
+        "YResolution": 1,
+        "ThumbnailWidth": 0,
+        "ThumbnailHeight": 0
+      }
+    },
+    "piexifjs": {
+      "0th": {},
+      "Exif": {},
+      "GPS": {},
+      "Interop": {},
+      "1st": {},
+      "thumbnail": null
+    },
+    "pdf": null,
+    "exiftool": {
+      "ExifTool:ExifToolVersion": 13.59,
+      "File:FileType": "JPEG",
+      "File:FileTypeExtension": "JPG",
+      "File:MIMEType": "image/jpeg",
+      "File:ImageWidth": 902,
+      "File:ImageHeight": 1600,
+      "File:EncodingProcess": 2,
+      "File:BitsPerSample": 8,
+      "File:ColorComponents": 3,
+      "File:YCbCrSubSampling": "2 2",
+      "JFIF:JFIFVersion": "1 1",
+      "JFIF:ResolutionUnit": 0,
+      "JFIF:XResolution": 1,
+      "JFIF:YResolution": 1,
+      "Composite:ImageSize": "902 1600",
+      "Composite:Megapixels": 1.4432
+    }
+  },
+  "geoPoint": null
+}

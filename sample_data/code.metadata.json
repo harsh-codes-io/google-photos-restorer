@@ -1,0 +1,291 @@
+{
+  "name": "code.png",
+  "ext": "png",
+  "mimeType": "image/png",
+  "detectedMime": "image/png",
+  "size": 3793507,
+  "source": "file",
+  "url": "",
+  "signature": {
+    "ext": "png",
+    "mime": "image/png",
+    "label": "PNG (89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52)"
+  },
+  "headHex": "89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52",
+  "headHexLong": "89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 0f 70 00 00 0a 80 08 06 00 00 00 e4 fa 46 da 00 00 00 09 70 48 59 73 00 00 3b 0e 00 00 3b 0e 01 cc b6 a1 83 00 00 10 00 49 44 41 54 78 01",
+  "headText": ".PNG . ... IHDR...p.. ........F.... pHYs..;...;..........IDATx.",
+  "headTextLong": ".PNG\r\n.\n...\rIHDR...p..\n........F....\tpHYs..;...;..........IDATx.",
+  "hashes": {
+    "md5": "abade043d4e138e4ff704d39813b7f0f",
+    "sha1": "048f895452ee2ed104d01ea5ee5308b0cc820e2c",
+    "sha256": "fa79b4fbb7d36349857c2dddec0cc01223419240568e2e34c56af37d558d9ecc",
+    "sha512": "14dcfa57fab307bb18c19dc8dd162c81024cad3d1a07b33fca03eea7334b1263c87593e0f66d0a2aa1a3c141c9627df24555a016c50cc5bbf514e412373a2fa0",
+    "crc32": "8d737c65",
+    "adler32": "e766d25c"
+  },
+  "relatedExts": [],
+  "viewer": {
+    "slug": "",
+    "via": "standalone",
+    "detectedMime": "image/png"
+  },
+  "arrayBuffer": {},
+  "parserReports": [
+    {
+      "id": "exifr",
+      "label": "exifr",
+      "status": "success",
+      "note": "Broad parser for TIFF/EXIF, XMP, ICC, IPTC, JFIF, and IHDR.",
+      "detail": "Parsed structured metadata."
+    },
+    {
+      "id": "piexifjs",
+      "label": "piexifjs",
+      "status": "skipped",
+      "note": "JPEG-focused EXIF parser and fallback.",
+      "detail": "Skipped because the file is not JPEG-like."
+    },
+    {
+      "id": "pdf-metadata",
+      "label": "pdf metadata",
+      "status": "skipped",
+      "note": "PDF-specific metadata parser.",
+      "detail": "Skipped because the file is not PDF."
+    },
+    {
+      "id": "kamadak-exif",
+      "label": "kamadak-exif (WASM)",
+      "status": "skipped",
+      "note": "No browser-ready build is bundled in this repo. Adapter hook is available via window.EXIF_WASM_ADAPTERS.",
+      "detail": ""
+    },
+    {
+      "id": "rexif",
+      "label": "rexif (WASM)",
+      "status": "skipped",
+      "note": "No browser-ready build is bundled in this repo. Adapter hook is available via window.EXIF_WASM_ADAPTERS.",
+      "detail": ""
+    }
+  ],
+  "metadata": [
+    {
+      "section": "ihdr",
+      "label": "Bit Depth",
+      "keyPath": "BitDepth",
+      "values": [
+        "8"
+      ]
+    },
+    {
+      "section": "ihdr",
+      "label": "Color Type",
+      "keyPath": "ColorType",
+      "values": [
+        "RGB with Alpha"
+      ]
+    },
+    {
+      "section": "ihdr",
+      "label": "Compression",
+      "keyPath": "Compression",
+      "values": [
+        "Deflate/Inflate"
+      ]
+    },
+    {
+      "section": "ihdr",
+      "label": "Filter",
+      "keyPath": "Filter",
+      "values": [
+        "Adaptive"
+      ]
+    },
+    {
+      "section": "ihdr",
+      "label": "Image Height",
+      "keyPath": "ImageHeight",
+      "values": [
+        "2688"
+      ]
+    },
+    {
+      "section": "ihdr",
+      "label": "Image Width",
+      "keyPath": "ImageWidth",
+      "values": [
+        "3952"
+      ]
+    },
+    {
+      "section": "ihdr",
+      "label": "Interlace",
+      "keyPath": "Interlace",
+      "values": [
+        "Noninterlaced"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "ExifTool:ExifToolVersion",
+      "keyPath": "ExifTool.ExifTool:ExifToolVersion",
+      "values": [
+        "13.59"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:FileType",
+      "keyPath": "ExifTool.File:FileType",
+      "values": [
+        "PNG"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:FileTypeExtension",
+      "keyPath": "ExifTool.File:FileTypeExtension",
+      "values": [
+        "PNG"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "File:MIMEType",
+      "keyPath": "ExifTool.File:MIMEType",
+      "values": [
+        "image/png"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "PNG:ImageWidth",
+      "keyPath": "ExifTool.PNG:ImageWidth",
+      "values": [
+        "3952"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "PNG:ImageHeight",
+      "keyPath": "ExifTool.PNG:ImageHeight",
+      "values": [
+        "2688"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "PNG:BitDepth",
+      "keyPath": "ExifTool.PNG:BitDepth",
+      "values": [
+        "8"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "PNG:ColorType",
+      "keyPath": "ExifTool.PNG:ColorType",
+      "values": [
+        "6"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "PNG:Compression",
+      "keyPath": "ExifTool.PNG:Compression",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "PNG:Filter",
+      "keyPath": "ExifTool.PNG:Filter",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "PNG:Interlace",
+      "keyPath": "ExifTool.PNG:Interlace",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "PNG-pHYs:PixelsPerUnitX",
+      "keyPath": "ExifTool.PNG-pHYs:PixelsPerUnitX",
+      "values": [
+        "15118"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "PNG-pHYs:PixelsPerUnitY",
+      "keyPath": "ExifTool.PNG-pHYs:PixelsPerUnitY",
+      "values": [
+        "15118"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "PNG-pHYs:PixelUnits",
+      "keyPath": "ExifTool.PNG-pHYs:PixelUnits",
+      "values": [
+        "1"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "Composite:ImageSize",
+      "keyPath": "ExifTool.Composite:ImageSize",
+      "values": [
+        "3952 2688"
+      ]
+    },
+    {
+      "section": "other",
+      "label": "Composite:Megapixels",
+      "keyPath": "ExifTool.Composite:Megapixels",
+      "values": [
+        "10.622976"
+      ]
+    }
+  ],
+  "responseHeaders": null,
+  "parserResults": {
+    "exifr": {
+      "ihdr": {
+        "ImageWidth": 3952,
+        "ImageHeight": 2688,
+        "BitDepth": 8,
+        "ColorType": "RGB with Alpha",
+        "Compression": "Deflate/Inflate",
+        "Filter": "Adaptive",
+        "Interlace": "Noninterlaced"
+      }
+    },
+    "piexifjs": null,
+    "pdf": null,
+    "exiftool": {
+      "ExifTool:ExifToolVersion": 13.59,
+      "File:FileType": "PNG",
+      "File:FileTypeExtension": "PNG",
+      "File:MIMEType": "image/png",
+      "PNG:ImageWidth": 3952,
+      "PNG:ImageHeight": 2688,
+      "PNG:BitDepth": 8,
+      "PNG:ColorType": 6,
+      "PNG:Compression": 0,
+      "PNG:Filter": 0,
+      "PNG:Interlace": 0,
+      "PNG-pHYs:PixelsPerUnitX": 15118,
+      "PNG-pHYs:PixelsPerUnitY": 15118,
+      "PNG-pHYs:PixelUnits": 1,
+      "Composite:ImageSize": "3952 2688",
+      "Composite:Megapixels": 10.622976
+    }
+  },
+  "geoPoint": null
+}
