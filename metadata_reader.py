@@ -20,7 +20,12 @@ def extract_metadata(data: dict) -> dict:
 
     extracted_fields['title'] = data.get("title")
     extracted_fields['description'] = data.get("description")
-    extracted_fields['photo_taken_time'] = convert_timestamp(data.get("photoTakenTime", {}).get("timestamp"))
+
+    timestamp=safe_extract_timestamp(data)
+    extracted_fields["photo_taken_time"] = convert_timestamp(timestamp)
+
+    extracted_fields['latitude'] = safe_extract_coordinates(data,"latitude")
+    extracted_fields['longitude'] = safe_extract_coordinates(data,"longitude")
 
     return extracted_fields
 
@@ -35,6 +40,28 @@ def convert_timestamp(timestamp: str | None) -> datetime | None:
         #ValueErrors -> if not a timestamp
         #overflowError, OSError - > if timestamp int is "000000000678990"
         return None
+
+def safe_extract_timestamp(data: dict) -> str | None:
+    photo_taken_time = data.get("photoTakenTime")
+    
+    if isinstance(photo_taken_time, dict):
+        return photo_taken_time.get("timestamp")
+    else:
+        return None 
+
+def safe_extract_coordinates(data: dict,coordinate: str) -> float | int | None:
+    geo_data = data.get("geoData")
+
+    if isinstance(geo_data, dict):
+        return geo_data.get(coordinate)
+
+    else:
+        return None 
+    
+
+    
+    
+
     
     
     

@@ -11,3 +11,7 @@ venv/
 
 # macOS
 .DS_Store
+
+# Test files and temporary output
+test_output/
+test_metadata_writer.py

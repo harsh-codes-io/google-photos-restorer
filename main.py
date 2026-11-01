@@ -3,6 +3,7 @@ from pathlib import Path
 
 import metadata_reader as mr
 import scanner
+import metadata_writer
 
 
 def main() -> None:
@@ -14,6 +15,7 @@ def main() -> None:
     #print("Parsing JSON file:")
 
     directory = project_dir / "sample_data"
+    output_directory = project_dir / "restored_photos"
 
     # Step 1: Scan the directory - Discover media files and JSON sidecars
     files = scanner.scan_directory(directory)
@@ -21,11 +23,17 @@ def main() -> None:
     # Step 2: Match media files with their sidecars
     matched_files = scanner.match_sidecars(files)
 
+    #if "matched files" dictionary is empty i.e no matching pair found - exit from main()
+    if not matched_files:
+        print("No matching photo and JSON pairs found.")
+        return
+
     for media_file_path , json_file_path in matched_files.items():
         try:
             parsed_json = mr.read_json(json_file_path)
             extracted_data = mr.extract_metadata(parsed_json)
             print(f"\nProcessing photo: {media_file_path.name}")
+            modified_image_path = metadata_writer.restore_image(media_file_path,output_directory,extracted_data)
         except FileNotFoundError:
             print("JSON file Could not be found.")
         except JSONDecodeError:
@@ -33,9 +41,12 @@ def main() -> None:
         except KeyError as error:
             print(f"Invalid metadata: {error}")
         else:
+            print(f"modified image name: {modified_image_path.name}")
             print(f"Photo Title: {extracted_data['title']}")
             print(f"Photo Description: {extracted_data['description']}")
             print(f"Photo Taken Time: {extracted_data['photo_taken_time']}")
+            print(f"latitude geoCode: {extracted_data['latitude']}")
+            print(f"longitude geoCode: {extracted_data['longitude']}")
 
 if __name__ == "__main__":
     main()

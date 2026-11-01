@@ -27,10 +27,16 @@ def match_sidecars(files: list[Path]) -> dict[Path,Path]:
     # using dictionary lookup to match the media file with corresponding json file and created a dictionary: dict{media file: matching json}
     for m_file in files:
         if m_file.suffix.lower() != ".json":
+            #photo.jpg.json 
             expected_file = m_file.name + ".json"
             matching_json = json_files.get(expected_file)
             if matching_json is None:
+                #photo.metadata.json
                 expected_file= m_file.stem+".metadata.json"
+                matching_json = json_files.get(expected_file)
+            if matching_json is None:
+                #photo.jpg.supplement-metadata.json
+                expected_file= m_file.name+".supplemental-metadata.json"
                 matching_json = json_files.get(expected_file)
         else:
             continue
