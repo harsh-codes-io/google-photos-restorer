@@ -15,3 +15,8 @@ venv/
 # Test files and temporary output
 test_output/
 test_metadata_writer.py
+sample_data/
+sample.json
+
+# Generated restored images
+restored_photos/
